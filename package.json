@@ -1,0 +1,39 @@
+{
+  "name": "feishu-bot-mcp",
+  "version": "1.0.0",
+  "description": "飞书机器人 MCP Server — 通过 MCP 协议向飞书群发送文本、Markdown、交互卡片、富文本等消息",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "feishu-bot-mcp": "server.js"
+  },
+  "files": [
+    "server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "feishu",
+    "lark",
+    "robot",
+    "webhook",
+    "chatbot"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonleonlei/MCP-feishu-webhook.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

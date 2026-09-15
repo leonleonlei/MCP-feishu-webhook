@@ -27,21 +27,6 @@
 
 ## 快速开始
 
-### npx 直接运行（推荐）
-
-```bash
-npx -y feishu-bot-mcp
-```
-
-### 全局安装
-
-```bash
-npm install -g feishu-bot-mcp
-feishu-bot-mcp
-```
-
-### 从源码运行
-
 ```bash
 git clone https://github.com/leonleonlei/MCP-feishu-webhook.git
 cd MCP-feishu-webhook
@@ -55,8 +40,8 @@ node server.js
 {
   "mcpServers": {
     "feishu-bot": {
-      "command": "npx",
-      "args": ["-y", "feishu-bot-mcp"],
+      "command": "node",
+      "args": ["/path/to/MCP-feishu-webhook/server.js"],
       "env": {
         "FEISHU_BOT_WEBHOOK": "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx",
         "FEISHU_BOT_SECRET": "your-secret"
